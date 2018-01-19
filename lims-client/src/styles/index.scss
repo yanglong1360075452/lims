@@ -1,0 +1,98 @@
+@import './element-ui.scss';
+@import './mixin.scss';
+@import './variable.scss';
+@import './common.scss';
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+
+  //      color
+  .bg-blue{
+    background-color: $color-theme;
+  }
+
+  .bg-red{
+    background-color: $color-red;
+  }
+
+  .bg-yellow{
+    background-color: $color-yellow;
+  }
+
+  .bg-green{
+    background-color: $color-green;
+  }
+
+  .bg-purple{
+    background-color: $color-purple;
+  }
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.pull-left{
+  float: left  !important;
+}
+.pull-right{
+  float: right  !important;
+}
+
+input{
+  outline: none;
+}
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.flex-y-center{
+  display: flex;
+  align-items: center;
+}

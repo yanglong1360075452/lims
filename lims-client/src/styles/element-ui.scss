@@ -1,0 +1,125 @@
+@import './variable.scss';
+body {
+    //覆盖一些element-ui样式 覆盖css样式可在这里添加
+    .el-upload {
+        input[type="file"] {
+            display: none !important;
+        }
+    }
+    .el-upload__input {
+        display: none;
+    }
+    //暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+    .el-dialog {
+        transform: none;
+        left: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+    .el-menu-item,
+    .el-submenu__title {
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+    //element ui upload
+    .upload-container {
+        .el-upload {
+            width: 100%;
+            .el-upload-dragger {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+    //tabs
+    .tabs-right {
+        .el-tabs__nav {
+            float: right;
+        }
+        .el-tabs__content {
+            border-radius: 10px 0 10px 10px;
+        }
+        &.el-tabs--card>.el-tabs__header {
+            margin-left: 10px;
+        }
+    }
+    .el-tabs__nav {
+        background-color: #fff;
+    }
+    .el-tabs--card>.el-tabs__header {
+        margin-bottom: 0;
+        z-index: 1;
+        .el-tabs__item {
+            border: 1px solid $color-text-ll;
+            border-right: 0;
+            &:last-child {
+                border-right: 1px solid $color-text-ll !important;
+            }
+            &.is-active {
+                border-radius: 0;
+                border-right: 0;
+            }
+        }
+    }
+    .el-tabs__content {
+        padding: 30px;
+        border: 1px solid #d1dbe5;
+        position: relative;
+        //z-index: 0;
+        top: -1px;
+        background-color: #fff;
+    }
+    //form
+    .el-form hr {
+        border: none;
+        border-bottom: 1px solid #d1dbe5;
+    }
+    .form-group-title {
+        color: $color-text;
+        padding-left: 10px;
+        border-left: 2px solid $color-theme;
+        height: 14px;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 20px 0;
+    }
+    .el-form-item__label {
+        color: $color-text-l;
+    }
+    .el-form .form-group-titile {
+        padding-left: 10px;
+        border-left: 2px solid #6e8dfb;
+        line-height: 1em;
+        margin: 20px 0;
+    }
+    // table
+    .el-table tr:hover {
+        background-color: #eff2f7;
+    }
+    // step
+    .el-step__icon {
+        height: 22px;
+        line-height: 22px;
+    }
+    .el-step__icon > div {
+        margin-right: 2px;
+        line-height: 24px;
+    }
+    .el-step__head.is-text.is-success {
+        background-color: #aad070;
+        border-color: #aad070;
+    }
+    .el-step__title.is-success{
+        font-size: 13px;
+        color: #2f3445;
+    }
+    .el-step__head.is-text.is-process {
+        background-color: #c0ccda;
+        border-color: #c0ccda;
+    }
+    .el-step__title.is-process {
+        color: #c0ccda;
+    }
+}

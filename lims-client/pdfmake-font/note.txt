@@ -1,0 +1,2 @@
+pdfmake不支持中文，需要手动替换字体文件
+将此文件夹下vfs_fonts.js替换掉node_modules\pdfmake\build目录下同名文件

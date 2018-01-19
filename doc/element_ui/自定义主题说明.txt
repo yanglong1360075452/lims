@@ -1,0 +1,1 @@
+将element-#3c6ab6文件夹复制到lims-front/node_modules/element-ui/lib/目录下

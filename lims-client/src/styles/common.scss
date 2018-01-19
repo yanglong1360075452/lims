@@ -1,0 +1,179 @@
+//main-container全局样式
+.app-main{
+  min-height: 100vh;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.leftReset {
+  background: #fff;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.group{
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: solid 1px $color-text-ll;
+  padding: 20px 30px;
+  margin: 20px 0;
+}
+
+.readonly{
+  opacity: .7;
+  pointer-events:none;
+  select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: 0;
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: none;
+
+  }
+
+
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+  select::-ms-expand { display: none; }
+}
+
+.el-form-item[readonly]{
+  opacity: .7;
+  pointer-events:none;
+}
+
+.el-select[readonly] {
+  opacity: .7;
+  pointer-events:none;
+}
+
+.page-component {
+  padding-bottom: 95px;
+  box-sizing: border-box
+}
+
+.page-component .content {
+  margin-left: -1px
+}
+
+.page-component .content>h3 {
+  margin: 45px 0 15px
+}
+
+.page-component .content>table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  color: #5e6d82;
+  font-size: 14px;
+  margin-bottom: 45px;
+  line-height: 1.5em
+}
+
+.page-component .content>table strong {
+  font-weight: 400
+}
+
+.page-component .content>table th {
+  text-align: left;
+  border-top: 1px solid #eaeefb;
+  background-color: #eff2f7;
+  white-space: nowrap
+}
+
+.page-component .content>table td,
+.page-component .content>table th {
+  border-bottom: 1px solid #eaeefb;
+  padding: 10px;
+  max-width: 250px
+}
+
+.page-component .content>table td:first-child,
+.page-component .content>table th:first-child {
+  padding-left: 10px
+}
+
+.page-component .page-component-up {
+  background-color: #58b7ff;
+  position: fixed;
+  right: 100px;
+  bottom: 150px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: .4;
+  transition: .3s
+}
+
+.page-component .page-component-up i {
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px
+}
+
+.page-component .page-component-up.hover {
+  opacity: 1
+}
+
+.page-component .back-top-fade-enter,
+.page-component .back-top-fade-leave-active {
+  transform: translateY(-30px);
+  opacity: 0
+}
+
+.demo-layout .el-row {
+  margin-bottom: 20px
+}
+
+.demo-layout .el-row:last-child {
+  margin-bottom: 0
+}
+
+.demo-layout .el-col {
+  border-radius: 4px
+}
+
+.demo-layout .bg-purple-dark {
+  background: #99a9bf
+}
+
+.demo-layout .bg-purple {
+  background: #d3dce6
+}
+
+.demo-layout .bg-purple-light {
+  background: #e5e9f2
+}
+
+.demo-layout .grid-content {
+  border-radius: 4px;
+  min-height: 36px
+}
+
+.demo-layout .row-bg {
+  padding: 10px 0;
+  background-color: #f9fafc
+}
+
+.tabs-disabled{
+  opacity: .7;
+  pointer-events:none;
+}
+
+.demo-box.demo-button .el-row{margin-bottom:10px}.demo-box.demo-button .el-button+.el-button{margin-left:10px}.demo-box.demo-button .el-button-group{margin-bottom:20px}.demo-box.demo-button .el-button-group .el-button+.el-button{margin-left:0}.demo-box.demo-button .el-button-group+.el-button-group{margin-left:10px}.demo-box.demo-button .intro-block{padding:0}.demo-button .intro-block .block{padding:30px 24px;overflow:hidden;border-bottom:1px solid #eff2f6}.demo-button .intro-block .block:last-child{border-bottom:none}.demo-button .intro-block .demonstration{font-size:14px;color:#8492a6;line-height:44px}.demo-button .intro-block .wrapper{float:right;margin-right:20px}
+.upload-tip{color:#8492a6;font-size:12px;margin-top:7px}.demo-box{margin-bottom:24px}.demo-box .upload-demo{width:360px}.demo-box .avatar-uploader .el-upload{border:1px dashed #d9d9d9;border-radius:6px;cursor:pointer;position:relative;overflow:hidden}.demo-box .avatar-uploader .el-upload:hover{border-color:#20a0ff}.demo-box .avatar-uploader .avatar-uploader-icon{font-size:28px;color:#8c939d;width:178px;height:178px;line-height:178px;text-align:center}.demo-box .avatar-uploader .avatar{width:178px;height:178px;display:block}
